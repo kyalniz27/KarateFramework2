@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-4","id":3},{"content":"pool-2-thread-3","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/post\/dataDriven\/postDataDriven[1.1:16]","start":1731209386078,"end":1731209386089,"title":"com\/api\/automation\/post\/dataDriven\/postDataDriven[1.1:16] 22:29:46.078-22:29:46.089 Create multiple job entries for data driven testing \/normal\/webapi\/all"},{"id":2,"group":1,"content":"com\/api\/automation\/post\/dataDriven\/postDataDriven[1.2:17]","start":1731209386098,"end":1731209386105,"title":"com\/api\/automation\/post\/dataDriven\/postDataDriven[1.2:17] 22:29:46.098-22:29:46.105 Create multiple job entries for data driven testing \/normal\/webapi\/add"},{"id":3,"group":1,"content":"com\/api\/automation\/post\/dataDriven\/postDataDriven[2.1:29]","start":1731209386110,"end":1731209386709,"title":"com\/api\/automation\/post\/dataDriven\/postDataDriven[2.1:29] 22:29:46.110-22:29:46.709 Data driven for the job description entry"},{"id":4,"group":1,"content":"com\/api\/automation\/post\/dataDriven\/postDataDriven[2.2:30]","start":1731209386719,"end":1731209386732,"title":"com\/api\/automation\/post\/dataDriven\/postDataDriven[2.2:30] 22:29:46.719-22:29:46.732 Data driven for the job description entry"},{"id":5,"group":2,"content":"com\/api\/automation\/post\/dataDriven\/postDataDriven[2.3:31]","start":1731209386730,"end":1731209386749,"title":"com\/api\/automation\/post\/dataDriven\/postDataDriven[2.3:31] 22:29:46.730-22:29:46.749 Data driven for the job description entry"},{"id":6,"group":3,"content":"com\/api\/automation\/post\/dataDriven\/postDataDriven[3.1:42]","start":1731209386733,"end":1731209386749,"title":"com\/api\/automation\/post\/dataDriven\/postDataDriven[3.1:42] 22:29:46.733-22:29:46.749 Data driven testing using an external csv file - PO"},{"id":7,"group":4,"content":"com\/api\/automation\/post\/dataDriven\/postDataDriven[3.2:42]","start":1731209386730,"end":1731209386749,"title":"com\/api\/automation\/post\/dataDriven\/postDataDriven[3.2:42] 22:29:46.730-22:29:46.749 Data driven testing using an external csv file - BA"},{"id":8,"group":5,"content":"com\/api\/automation\/post\/dataDriven\/postDataDriven[3.3:42]","start":1731209386733,"end":1731209386747,"title":"com\/api\/automation\/post\/dataDriven\/postDataDriven[3.3:42] 22:29:46.733-22:29:46.747 Data driven testing using an external csv file - QA"},{"id":9,"group":1,"content":"com\/api\/automation\/post\/fileUpload\/fileUpload[1:7]","start":1731209386738,"end":1731209386845,"title":"com\/api\/automation\/post\/fileUpload\/fileUpload[1:7] 22:29:46.738-22:29:46.845 Upload file to the server"},{"id":10,"group":5,"content":"com\/api\/automation\/post\/fileUpload\/fileUpload[2:17]","start":1731209386753,"end":1731209386846,"title":"com\/api\/automation\/post\/fileUpload\/fileUpload[2:17] 22:29:46.753-22:29:46.846 Upload file to the server using JSON data"},{"id":11,"group":1,"content":"com\/api\/automation\/post\/javaScriptExecutor[1:7]","start":1731209385866,"end":1731209386066,"title":"com\/api\/automation\/post\/javaScriptExecutor[1:7] 22:29:45.866-22:29:46.066 Create and execute JS functions"},{"id":12,"group":2,"content":"com\/api\/automation\/post\/PostRequest[1:7]","start":1731209385866,"end":1731209386723,"title":"com\/api\/automation\/post\/PostRequest[1:7] 22:29:45.866-22:29:46.723 Get the data from app in JSON and validate using fuzzy matcher"},{"id":13,"group":4,"content":"com\/api\/automation\/post\/PostRequest[2:17]","start":1731209385866,"end":1731209386724,"title":"com\/api\/automation\/post\/PostRequest[2:17] 22:29:45.866-22:29:46.724 Create new entry using external file"},{"id":14,"group":3,"content":"com\/api\/automation\/post\/PostRequest[3:28]","start":1731209385866,"end":1731209386723,"title":"com\/api\/automation\/post\/PostRequest[3:28] 22:29:45.866-22:29:46.723 Create job entry using embedded expression"},{"id":15,"group":5,"content":"com\/api\/automation\/post\/schemaValidation[1:7]","start":1731209385866,"end":1731209386726,"title":"com\/api\/automation\/post\/schemaValidation[1:7] 22:29:45.866-22:29:46.726 Create new entry using external file for schema validation"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

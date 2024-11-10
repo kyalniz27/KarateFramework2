@@ -1,0 +1,20 @@
+{
+		"jobId": 3,
+		"jobTitle": "QA",
+		"jobDescription": "To test andriod application",
+		"experience": [
+			"Selenium",
+			"Java",
+			"Cucumber"
+		],
+		"project": [
+			{
+				"projectName": "BBVA",
+				"technology": [
+					"Automation",
+					"Manual",
+					"Hybrid"
+				]
+			}
+		]
+	}
