@@ -1021,3 +1021,949 @@ net.masterthought.cucumber.ValidationException: No JSON report file was found!
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+11:37:39.840 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:37:39.849 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1731343059847
+11:37:39.856 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+11:37:40.566 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:40.566 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:40.566 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:40.566 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:40.566 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:40.594 [pool-1-thread-2] INFO  com.intuit.karate - [print] ####################################################################################################### 
+11:37:40.594 [pool-1-thread-5] INFO  com.intuit.karate - [print] ===================================================================================== 
+11:37:40.594 [pool-1-thread-4] INFO  com.intuit.karate - [print] ####################################################################################################### 
+11:37:40.595 [pool-1-thread-1] INFO  com.intuit.karate - [print] ===================================================================================== 
+11:37:40.595 [pool-1-thread-3] INFO  com.intuit.karate - [print] ####################################################################################################### 
+11:37:40.601 [pool-1-thread-1] INFO  com.intuit.karate - [print] Your age is 39 
+11:37:40.606 [pool-1-thread-1] INFO  com.intuit.karate - [print] The random value is 98 
+11:37:40.606 [pool-1-thread-1] INFO  com.intuit.karate - [print] ===================================================================================== 
+11:37:40.613 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:40.616 [pool-1-thread-1] INFO  com.intuit.karate - [print] http://localhost:9897 
+11:37:40.617 [pool-1-thread-1] INFO  com.intuit.karate - [print] /normal/webapi/all 
+11:37:40.619 [pool-1-thread-1] INFO  com.intuit.karate - [print] get 
+11:37:40.620 [pool-1-thread-1] INFO  com.intuit.karate - [print] 200 
+11:37:40.627 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:40.628 [pool-1-thread-1] INFO  com.intuit.karate - [print] http://localhost:9897 
+11:37:40.629 [pool-1-thread-1] INFO  com.intuit.karate - [print] /normal/webapi/add 
+11:37:40.630 [pool-1-thread-1] INFO  com.intuit.karate - [print] post 
+11:37:40.631 [pool-1-thread-1] INFO  com.intuit.karate - [print] 201 
+11:37:40.635 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:40.962 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:com/api/automation/post/javaScriptExecutor.feature
+11:37:41.022 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":2,"jobTitle":"SDET","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:37:41.022 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 199
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":3,"jobTitle":"QA","jobDescription":"To test andriod application","experience":["Selenium","Java","Cucumber"],"project":[{"projectName":"BBVA","technology":["Automation","Manual","Hybrid"]}]}
+
+11:37:41.022 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 197
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"9897","jobTitle":"PO","jobDescription":"To do something","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:37:41.022 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 212
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":53,"jobTitle":"Doctor","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:37:41.022 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 199
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":3,"jobTitle":"QA","jobDescription":"To test andriod application","experience":["Selenium","Java","Cucumber"],"project":[{"projectName":"BBVA","technology":["Automation","Manual","Hybrid"]}]}
+
+11:37:41.595 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 570
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 16:37:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":2,"jobTitle":"SDET","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:37:41.595 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 571
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 16:37:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":53,"jobTitle":"Doctor","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:37:41.595 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 570
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 16:37:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":3,"jobTitle":"QA","jobDescription":"To test andriod application","experience":["Selenium","Java","Cucumber"],"project":[{"projectName":"BBVA","technology":["Automation","Manual","Hybrid"]}]}
+
+11:37:41.595 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 571
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 16:37:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":9897,"jobTitle":"PO","jobDescription":"To do something","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:37:41.595 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 572
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 16:37:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":3,"jobTitle":"QA","jobDescription":"To test andriod application","experience":["Selenium","Java","Cucumber"],"project":[{"projectName":"BBVA","technology":["Automation","Manual","Hybrid"]}]}
+
+11:37:41.598 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "jobId": 53,
+  "jobTitle": "Doctor",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle"
+      ]
+    }
+  ]
+}
+ 
+11:37:41.598 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "jobId": 2,
+  "jobTitle": "SDET",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle"
+      ]
+    }
+  ]
+}
+ 
+11:37:41.598 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "jobId": 3,
+  "jobTitle": "QA",
+  "jobDescription": "To test andriod application",
+  "experience": [
+    "Selenium",
+    "Java",
+    "Cucumber"
+  ],
+  "project": [
+    {
+      "projectName": "BBVA",
+      "technology": [
+        "Automation",
+        "Manual",
+        "Hybrid"
+      ]
+    }
+  ]
+}
+ 
+11:37:41.602 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:41.604 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 195
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"id","jobTitle":"BA","jobDescription":"To do something","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:37:41.607 [pool-1-thread-2] INFO  com.intuit.karate - [print] ####################################################################################################### 
+11:37:41.607 [pool-1-thread-3] INFO  com.intuit.karate - [print] ####################################################################################################### 
+11:37:41.607 [pool-1-thread-4] INFO  com.intuit.karate - [print] ####################################################################################################### 
+11:37:41.611 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:41.611 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:41.611 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:41.624 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:41.624 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 190
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"FALSE","jobTitle":"BA","jobDescription":"Analyze","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:37:41.624 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 187
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"9898","jobTitle":"PO","jobDescription":"Owner","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:37:41.624 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 198
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"false","jobTitle":"QA","jobDescription":"To do something","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:37:41.628 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 187
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"FALSE","jobTitle":"QA","jobDescription":"Test","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:37:41.630 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 16:37:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":9898,"jobTitle":"PO","jobDescription":"Owner","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:37:41.634 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:41.636 [pool-1-thread-3] INFO  com.intuit.karate - [print] ===================================================================================== 
+11:37:41.648 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 19
+1 < 400
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 16:37:41 GMT
+1 < Connection: close
+{"timestamp":"2024-11-11T16:37:41.634+0000","status":400,"error":"Bad Request","message":"JSON parse error: Cannot deserialize value of type `int` from String \"FALSE\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"FALSE\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 10] (through reference chain: com.lab.jobportal.model.Job[\"jobId\"])","path":"/normal/webapi/add"}
+
+11:37:41.648 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 24
+1 < 400
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 16:37:41 GMT
+1 < Connection: close
+{"timestamp":"2024-11-11T16:37:41.630+0000","status":400,"error":"Bad Request","message":"JSON parse error: Cannot deserialize value of type `int` from String \"false\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"false\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 10] (through reference chain: com.lab.jobportal.model.Job[\"jobId\"])","path":"/normal/webapi/add"}
+
+11:37:41.648 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 24
+1 < 400
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 16:37:41 GMT
+1 < Connection: close
+{"timestamp":"2024-11-11T16:37:41.630+0000","status":400,"error":"Bad Request","message":"JSON parse error: Cannot deserialize value of type `int` from String \"FALSE\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"FALSE\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 10] (through reference chain: com.lab.jobportal.model.Job[\"jobId\"])","path":"/normal/webapi/add"}
+
+11:37:41.650 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 45
+1 < 400
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 16:37:41 GMT
+1 < Connection: close
+{"timestamp":"2024-11-11T16:37:41.624+0000","status":400,"error":"Bad Request","message":"JSON parse error: Cannot deserialize value of type `int` from String \"id\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"id\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 10] (through reference chain: com.lab.jobportal.model.Job[\"jobId\"])","path":"/normal/webapi/add"}
+
+11:37:41.654 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:41.655 [pool-1-thread-5] INFO  com.intuit.karate - [print] ===================================================================================== 
+11:37:41.721 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/upload
+1 > Content-Type: multipart/form-data; boundary=44b1e6b31a9e8451
+1 > Content-Length: 486
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="jobEntry.json"
+content-type: application/json; charset=UTF-8
+content-length: 301
+Completed: true
+IsInMemory: true
+
+
+11:37:41.721 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/upload
+1 > Content-Type: multipart/form-data; boundary=13b79b375dbad3ed
+1 > Content-Length: 485
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="fileToUpload.txt"
+content-type: text/plain; charset=UTF-8
+content-length: 303
+Completed: true
+IsInMemory: true
+
+
+11:37:41.728 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 5 (3 remaining) classpath:com/api/automation/post/PostRequest.feature
+11:37:41.761 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:com/api/automation/post/schemaValidation.feature
+11:37:41.762 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 40
+1 < 200
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 16:37:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"message":"File jobEntry.json uploaded at C:\\Users\\MUSTAF~1.KOK\\AppData\\Local\\Temp\\\\"}
+
+11:37:41.762 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 41
+1 < 200
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 16:37:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"message":"File fileToUpload.txt uploaded at C:\\Users\\MUSTAF~1.KOK\\AppData\\Local\\Temp\\\\"}
+
+11:37:41.764 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "message": "File fileToUpload.txt uploaded at C:\\Users\\MUSTAF~1.KOK\\AppData\\Local\\Temp\\\\"
+}
+ 
+11:37:41.764 [pool-1-thread-5] INFO  com.intuit.karate - [print] {
+  "message": "File jobEntry.json uploaded at C:\\Users\\MUSTAF~1.KOK\\AppData\\Local\\Temp\\\\"
+}
+ 
+11:37:41.765 [pool-1-thread-3] INFO  com.intuit.karate - [print] ===================================================================================== 
+11:37:41.766 [pool-1-thread-5] INFO  com.intuit.karate - [print] ===================================================================================== 
+11:37:41.817 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 5 (1 remaining) classpath:com/api/automation/post/dataDriven/postDataDriven.feature
+11:37:41.845 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:com/api/automation/post/fileUpload/fileUpload.feature
+11:37:42.018 [main] WARN  n.m.cucumber.ReportBuilder - Unexpected error
+net.masterthought.cucumber.ValidationException: No JSON report file was found!
+	at net.masterthought.cucumber.ReportParser.parseJsonFiles(ReportParser.java:61)
+	at net.masterthought.cucumber.ReportBuilder.generateReports(ReportBuilder.java:97)
+	at com.api.automation.ParallelRunnerWithCucumberReport.generateCucumberReport(ParallelRunnerWithCucumberReport.java:39)
+	at com.api.automation.ParallelRunnerWithCucumberReport.testParallel(ParallelRunnerWithCucumberReport.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:95)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:91)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:60)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:530)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:758)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:453)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+12:04:47.365 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:04:47.372 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1731344687369
+12:04:47.376 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+12:04:47.969 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:47.969 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:47.969 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:47.969 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:47.969 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:47.995 [pool-1-thread-5] INFO  com.intuit.karate - [print] ===================================================================================== 
+12:04:47.995 [pool-1-thread-3] INFO  com.intuit.karate - [print] ####################################################################################################### 
+12:04:47.995 [pool-1-thread-4] INFO  com.intuit.karate - [print] ####################################################################################################### 
+12:04:47.995 [pool-1-thread-1] INFO  com.intuit.karate - [print] ===================================================================================== 
+12:04:47.997 [pool-1-thread-2] INFO  com.intuit.karate - [print] ####################################################################################################### 
+12:04:48.004 [pool-1-thread-1] INFO  com.intuit.karate - [print] Your age is 39 
+12:04:48.008 [pool-1-thread-1] INFO  com.intuit.karate - [print] The random value is 10 
+12:04:48.009 [pool-1-thread-1] INFO  com.intuit.karate - [print] ===================================================================================== 
+12:04:48.021 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:48.024 [pool-1-thread-1] INFO  com.intuit.karate - [print] http://localhost:9897 
+12:04:48.025 [pool-1-thread-1] INFO  com.intuit.karate - [print] /normal/webapi/all 
+12:04:48.026 [pool-1-thread-1] INFO  com.intuit.karate - [print] get 
+12:04:48.028 [pool-1-thread-1] INFO  com.intuit.karate - [print] 200 
+12:04:48.034 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:48.037 [pool-1-thread-1] INFO  com.intuit.karate - [print] http://localhost:9897 
+12:04:48.038 [pool-1-thread-1] INFO  com.intuit.karate - [print] /normal/webapi/add 
+12:04:48.039 [pool-1-thread-1] INFO  com.intuit.karate - [print] post 
+12:04:48.041 [pool-1-thread-1] INFO  com.intuit.karate - [print] 201 
+12:04:48.045 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:48.361 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 212
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":62,"jobTitle":"Doctor","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+12:04:48.361 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 199
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":3,"jobTitle":"QA","jobDescription":"To test andriod application","experience":["Selenium","Java","Cucumber"],"project":[{"projectName":"BBVA","technology":["Automation","Manual","Hybrid"]}]}
+
+12:04:48.361 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 197
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"9897","jobTitle":"PO","jobDescription":"To do something","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+12:04:48.361 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":2,"jobTitle":"SDET","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+12:04:48.361 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 199
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":3,"jobTitle":"QA","jobDescription":"To test andriod application","experience":["Selenium","Java","Cucumber"],"project":[{"projectName":"BBVA","technology":["Automation","Manual","Hybrid"]}]}
+
+12:04:48.361 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:com/api/automation/post/javaScriptExecutor.feature
+12:04:48.388 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 17:04:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":2,"jobTitle":"SDET","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+12:04:48.388 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 17:04:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":3,"jobTitle":"QA","jobDescription":"To test andriod application","experience":["Selenium","Java","Cucumber"],"project":[{"projectName":"BBVA","technology":["Automation","Manual","Hybrid"]}]}
+
+12:04:48.388 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 17:04:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":3,"jobTitle":"QA","jobDescription":"To test andriod application","experience":["Selenium","Java","Cucumber"],"project":[{"projectName":"BBVA","technology":["Automation","Manual","Hybrid"]}]}
+
+12:04:48.388 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 17:04:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":9897,"jobTitle":"PO","jobDescription":"To do something","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+12:04:48.388 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 17:04:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":62,"jobTitle":"Doctor","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+12:04:48.392 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "jobId": 2,
+  "jobTitle": "SDET",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle"
+      ]
+    }
+  ]
+}
+ 
+12:04:48.392 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "jobId": 3,
+  "jobTitle": "QA",
+  "jobDescription": "To test andriod application",
+  "experience": [
+    "Selenium",
+    "Java",
+    "Cucumber"
+  ],
+  "project": [
+    {
+      "projectName": "BBVA",
+      "technology": [
+        "Automation",
+        "Manual",
+        "Hybrid"
+      ]
+    }
+  ]
+}
+ 
+12:04:48.392 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "jobId": 62,
+  "jobTitle": "Doctor",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle"
+      ]
+    }
+  ]
+}
+ 
+12:04:48.400 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:48.403 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 195
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"id","jobTitle":"BA","jobDescription":"To do something","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+12:04:48.404 [pool-1-thread-3] INFO  com.intuit.karate - [print] ####################################################################################################### 
+12:04:48.404 [pool-1-thread-2] INFO  com.intuit.karate - [print] ####################################################################################################### 
+12:04:48.404 [pool-1-thread-4] INFO  com.intuit.karate - [print] ####################################################################################################### 
+12:04:48.410 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:48.410 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:48.410 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:48.411 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:48.412 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 400
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 17:04:48 GMT
+1 < Connection: close
+{"timestamp":"2024-11-11T17:04:48.410+0000","status":400,"error":"Bad Request","message":"JSON parse error: Cannot deserialize value of type `int` from String \"id\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"id\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 10] (through reference chain: com.lab.jobportal.model.Job[\"jobId\"])","path":"/normal/webapi/add"}
+
+12:04:48.415 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 198
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"false","jobTitle":"QA","jobDescription":"To do something","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+12:04:48.415 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 190
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"FALSE","jobTitle":"BA","jobDescription":"Analyze","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+12:04:48.415 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 187
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"9898","jobTitle":"PO","jobDescription":"Owner","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+12:04:48.415 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 187
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"FALSE","jobTitle":"QA","jobDescription":"Test","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+12:04:48.417 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:48.420 [pool-1-thread-1] INFO  com.intuit.karate - [print] ===================================================================================== 
+12:04:48.421 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 17:04:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":9898,"jobTitle":"PO","jobDescription":"Owner","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+12:04:48.422 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 400
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 17:04:48 GMT
+1 < Connection: close
+{"timestamp":"2024-11-11T17:04:48.420+0000","status":400,"error":"Bad Request","message":"JSON parse error: Cannot deserialize value of type `int` from String \"false\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"false\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 10] (through reference chain: com.lab.jobportal.model.Job[\"jobId\"])","path":"/normal/webapi/add"}
+
+12:04:48.421 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 400
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 17:04:48 GMT
+1 < Connection: close
+{"timestamp":"2024-11-11T17:04:48.420+0000","status":400,"error":"Bad Request","message":"JSON parse error: Cannot deserialize value of type `int` from String \"FALSE\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"FALSE\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 10] (through reference chain: com.lab.jobportal.model.Job[\"jobId\"])","path":"/normal/webapi/add"}
+
+12:04:48.426 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 400
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 17:04:48 GMT
+1 < Connection: close
+{"timestamp":"2024-11-11T17:04:48.424+0000","status":400,"error":"Bad Request","message":"JSON parse error: Cannot deserialize value of type `int` from String \"FALSE\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"FALSE\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 10] (through reference chain: com.lab.jobportal.model.Job[\"jobId\"])","path":"/normal/webapi/add"}
+
+12:04:48.426 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+12:04:48.427 [pool-1-thread-4] INFO  com.intuit.karate - [print] ===================================================================================== 
+12:04:48.478 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/upload
+1 > Content-Type: multipart/form-data; boundary=9fe89126d4f2607f
+1 > Content-Length: 486
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="jobEntry.json"
+content-type: application/json; charset=UTF-8
+content-length: 301
+Completed: true
+IsInMemory: true
+
+
+12:04:48.478 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/upload
+1 > Content-Type: multipart/form-data; boundary=26715f5b51fa92b
+1 > Content-Length: 483
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.23)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="fileToUpload.txt"
+content-type: text/plain; charset=UTF-8
+content-length: 303
+Completed: true
+IsInMemory: true
+
+
+12:04:48.488 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 200
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 17:04:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"message":"File fileToUpload.txt uploaded at C:\\Users\\MUSTAF~1.KOK\\AppData\\Local\\Temp\\\\"}
+
+12:04:48.488 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 200
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 11 Nov 2024 17:04:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"message":"File jobEntry.json uploaded at C:\\Users\\MUSTAF~1.KOK\\AppData\\Local\\Temp\\\\"}
+
+12:04:48.488 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "message": "File jobEntry.json uploaded at C:\\Users\\MUSTAF~1.KOK\\AppData\\Local\\Temp\\\\"
+}
+ 
+12:04:48.489 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "message": "File fileToUpload.txt uploaded at C:\\Users\\MUSTAF~1.KOK\\AppData\\Local\\Temp\\\\"
+}
+ 
+12:04:48.490 [pool-1-thread-4] INFO  com.intuit.karate - [print] ===================================================================================== 
+12:04:48.490 [pool-1-thread-1] INFO  com.intuit.karate - [print] ===================================================================================== 
+12:04:48.518 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 5 (3 remaining) classpath:com/api/automation/post/PostRequest.feature
+12:04:48.545 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:com/api/automation/post/schemaValidation.feature
+12:04:48.597 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 5 (1 remaining) classpath:com/api/automation/post/dataDriven/postDataDriven.feature
+12:04:48.633 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:com/api/automation/post/fileUpload/fileUpload.feature
